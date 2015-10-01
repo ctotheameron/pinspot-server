@@ -1,0 +1,30 @@
+{
+  "name": "PinSpot",
+  "plural": "PinSpots",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "pinCount": {
+      "type": "number",
+      "required": true
+    },
+    "loc": {
+      "type": "geopoint",
+      "required": true
+    },
+    "pins": {
+      "type": ["string"]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
